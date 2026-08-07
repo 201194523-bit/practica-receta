@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cuenta Bancaria</title>
+</head>
+<script src="cuentasyDom.js"></script>
+<body>
+  <h1>Simulador de Cuenta Bancaria</h1>
+  
+  <!-- span: crear identificador en una linea 
+       no contiene texto, se va a llenar con
+       los metodos del objeto cuenta -->
+  <p><strong>Titular:</strong><span id="titular"></span></p>
+  <p><strong>Saldo actual:</strong> $<span id="saldo"></span></p>
+
+  <!-- no usamos form porque no enviamos datos a un servidor.
+       es solo manipulación del DOM en el navegador -->
+  <input type="number" id="cantidad" placeholder="Ingresa cantidad">
+  <br>
+  <br>
+  
+  <button id="btnDepositar">Depositar</button>
+<button id="btnRetirar">Retirar</button>
+<button id="btnConsultar">Consultar Saldo</button>
+</body>
+
+</html>
